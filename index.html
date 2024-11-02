@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissful Escape Spa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Blissful Escape Spa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="home" class="hero d-flex align-items-center text-center">
+    <div class="container">
+        <h1>Welcome to Blissful Escape Spa</h1>
+        <p>Your sanctuary for relaxation and rejuvenation</p>
+        <a href="#services" class="btn btn-primary mt-3">Discover Our Services</a>
+    </div>
+</header>
+
+<!-- About Us Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center">At Blissful Escape Spa, we blend relaxation with professional beauty treatments. Our spa offers a peaceful retreat where you can unwind and refresh with personalized therapies crafted just for you.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500" class="img-fluid" alt="Spa">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <p>Experience luxury and tranquility at Blissful Escape Spa. From soothing massages to invigorating facials, our services are designed to cater to your individual needs and ensure your ultimate satisfaction.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row mt-4">
+            <!-- Massage Therapy Service -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="service-card-bg">
+                        <h5 class="card-title">Massage Therapy</h5>
+                        <p class="card-text">
+                            Relieve stress and rejuvenate with our soothing massage therapies. From Swedish to deep tissue, each massage is tailored to relax muscles, ease tension, and promote circulation for a holistic wellness experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Facial Treatments Service -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="service-card-bg">
+                        <h5 class="card-title">Facial Treatments</h5>
+                        <p class="card-text">
+                            Rejuvenate your skin with our luxurious facial treatments. Each session is customized to cleanse, exfoliate, and hydrate your skin, leaving you with a glowing, youthful complexion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Manicure & Pedicure Service -->
+            <div class="col-md-4">
+                <div class="card service-card">
+                    <div class="service-card-bg">
+                        <h5 class="card-title">Manicure & Pedicure</h5>
+                        <p class="card-text">
+                            Enjoy pampering hand and foot treatments that include exfoliation, massage, and nail care. Perfectly polished nails and softened skin will leave you feeling revitalized and confident.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Booking Section -->
+<section id="booking" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Book Your Appointment</h2>
+        <p class="text-center">Select a date and time, and let us know which services you’d like.</p>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="service">Choose a Service</label>
+                        <select class="form-control" id="service">
+                            <option>Massage Therapy</option>
+                            <option>Facial Treatment</option>
+                            <option>Manicure & Pedicure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Select Date</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Select Time</label>
+                        <input type="time" class="form-control" id="time">
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Additional Notes</label>
+                        <textarea class="form-control" id="notes" rows="3" placeholder="Any special requests"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center py-3">
+    <p>&copy; 2023 Blissful Escape Spa. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

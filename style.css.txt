@@ -1,0 +1,91 @@
+/* Hero Section */
+.hero {
+    height: 75vh;
+    background: linear-gradient(135deg, #9d50bb 0%, #6e48aa 100%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.hero .btn {
+    background-color: #6e48aa;
+    border: none;
+}
+
+.hero .btn:hover {
+    background-color: #9d50bb;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurry effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    color: #6e48aa !important; /* Matches the purple theme */
+}
+
+.navbar .navbar-brand {
+    color: #9d50bb !important; /* Matches the purple theme */
+}
+
+.navbar .nav-link:hover {
+    color: #9d50bb !important;
+}
+
+/* Service Card Styling */
+.service-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient Background for Service Cards */
+.service-card-bg {
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #9d50bb 0%, #6e48aa 100%);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.service-card-bg:hover {
+    background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+    color: #f3f3f3;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
